@@ -126,3 +126,22 @@ section {
 .hamburger4:hover > :nth-child(3) {
   transform: rotate(-720deg) translate(-0rem, 0rem);
 }
+
+/* funburger a piramide */
+.hamburger5 div {
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+/* first line is a dott*/
+.hamburger5:hover > :nth-child(1) {
+  width: 1rem;
+}
+/* second line is shrinking */
+.hamburger5:hover > :nth-child(2) {
+  width: 2rem;
+  transform: rotate(720deg) translate(-0rem, 0rem);
+}
+/* third line is shrinking */
+.hamburger5:hover > :nth-child(3) {
+  width: 3rem;
+  transform: rotate(-720deg) translate(-0rem, 0rem);
+}
