@@ -92,7 +92,7 @@ section {
 }
 /* third flip to the top */
 .hamburger3 div {
-  transition: all 0.9s linear;
+  transition: all 0.5s linear;
 }
 /* first line is sliding bottom right*/
 .hamburger3:hover > :nth-child(1) {
@@ -108,4 +108,21 @@ section {
 .hamburger3:hover > :nth-child(3) {
   /* transform: skew(25deg) translate(0.4rem, 2rem); */
   transform: rotate(180deg) translate(-1.3rem, 2rem);
+}
+
+/* spinning on spot */
+.hamburger4 div {
+  transition: all 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+}
+/* first line is spinning  right*/
+.hamburger4:hover > :nth-child(1) {
+  transform: rotate(-1080deg) translate(-0rem, 0rem);
+}
+/* second line is spinning bottom left */
+.hamburger4:hover > :nth-child(2) {
+  transform: rotate(720deg) translate(-0rem, 0rem);
+}
+/* third line is spinning right*/
+.hamburger4:hover > :nth-child(3) {
+  transform: rotate(-720deg) translate(-0rem, 0rem);
 }
