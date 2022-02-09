@@ -145,3 +145,60 @@ section {
   width: 3rem;
   transform: rotate(-720deg) translate(-0rem, 0rem);
 }
+
+/* funburger six in clock with three dots */
+.hamburger6 div {
+  transition: all 0.7s ease-in-out;
+}
+/* hidden div */
+.hamburger6 div:nth-child(4),
+.hamburger6 div:nth-child(5),
+.hamburger6 div:nth-child(6) {
+  display: none;
+}
+/* first clock line */
+.hamburger6:hover > :nth-child(1) {
+  transform: rotate(90deg) translate(0, 0rem);
+  width: 5rem;
+  opacity: 0;
+}
+/* the big clock line expanding */
+.hamburger6:hover > :nth-child(2) {
+  width: 10rem;
+  transform: rotate(90deg) translate(1.5rem, 1.2rem);
+  opacity: 0;
+}
+/* clock line expanding */
+.hamburger6:hover > :nth-child(3) {
+  width: 4rem;
+  transform: rotate(720deg) translate(14rem, 1.2rem);
+  opacity: 0;
+}
+/* top ball */
+.hamburger6:hover > :nth-child(4) {
+  display: block;
+  /* transform: rotateX(50%) translate(0rem, 0rem) e; */
+  transform: rotate(40%) translate(0rem, 0rem);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+}
+/* middle ball */
+.hamburger6:hover > :nth-child(5) {
+  display: block;
+  /* transform: rotateX(50%) translate(0rem, 0rem) e; */
+  transform: rotate(40%) translate(0rem, 0rem);
+  width: 1rem;
+  height: 1rem;
+  margin: 0.3rem;
+  border-radius: 100%;
+}
+/* bottom ball */
+.hamburger6:hover > :nth-child(6) {
+  display: block;
+  /* transform: rotateX(50%) translate(0rem, 0rem) e; */
+  transform: rotate(40%) translate(0rem, 0rem);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
+}
