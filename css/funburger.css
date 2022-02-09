@@ -158,14 +158,14 @@ section {
 }
 /* first clock line */
 .hamburger6:hover > :nth-child(1) {
-  transform: rotate(90deg) translate(0, 0rem);
-  width: 5rem;
+  transform: rotate(275deg) translate(0rem, 0rem);
+  width: 6rem;
   opacity: 0;
 }
 /* the big clock line expanding */
 .hamburger6:hover > :nth-child(2) {
   width: 10rem;
-  transform: rotate(90deg) translate(1.5rem, 1.2rem);
+  transform: rotate(175deg) translate(1.5rem, 1.2rem);
   opacity: 0;
 }
 /* clock line expanding */
@@ -177,28 +177,101 @@ section {
 /* top ball */
 .hamburger6:hover > :nth-child(4) {
   display: block;
-  /* transform: rotateX(50%) translate(0rem, 0rem) e; */
-  transform: rotate(40%) translate(0rem, 0rem);
   width: 1rem;
   height: 1rem;
   border-radius: 100%;
+  animation-name: visible;
+  animation-duration: 3s;
 }
 /* middle ball */
 .hamburger6:hover > :nth-child(5) {
   display: block;
-  /* transform: rotateX(50%) translate(0rem, 0rem) e; */
-  transform: rotate(40%) translate(0rem, 0rem);
   width: 1rem;
   height: 1rem;
   margin: 0.3rem;
   border-radius: 100%;
+  animation-name: visible;
+  animation-duration: 3s;
 }
 /* bottom ball */
 .hamburger6:hover > :nth-child(6) {
   display: block;
-  /* transform: rotateX(50%) translate(0rem, 0rem) e; */
   transform: rotate(40%) translate(0rem, 0rem);
   width: 1rem;
   height: 1rem;
   border-radius: 100%;
+  animation-name: visible;
+  animation-duration: 3s;
+}
+@keyframes visible {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*  */
+.hamburger7 div {
+  transition: all 0.9s ease-in;
+}
+/* hidden div
+.hamburger6 div:nth-child(4),
+.hamburger6 div:nth-child(5),
+.hamburger6 div:nth-child(6) {
+  display: none;
+} */
+/* first clock line */
+.hamburger7:hover > :nth-child(1) {
+  transform: rotate(12deg) translate(3rem, 4rem);
+  width: 4rem;
+  opacity: 0;
+}
+/* the big clock line expanding */
+.hamburger7:hover > :nth-child(2) {
+  transform: scale(13deg) translate(1rem, 1rem);
+  width: 2.3rem;
+}
+/* clock line expanding */
+.hamburger7:hover > :nth-child(3) {
+  width: 2.4rem;
+  transform: rotate(-90deg) translate(1.4rem, 0rem);
+}
+
+/* hamburger slide left and right */
+/* minus */
+.hamburger8 div {
+  transition: all 0.9s ease-in;
+}
+.hamburger8:hover > :nth-child(1) {
+  animation-name: slide-left;
+  animation-duration: 3s;
+}
+.hamburger8:hover > :nth-child(2) {
+  transform: scale(13deg) translate(1rem, 1rem);
+  width: 2.3rem;
+}
+
+.hamburger8:hover > :nth-child(3) {
+  animation-name: slide-right;
+  animation-duration: 3s;
+}
+
+@keyframes slide-left {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
 }
