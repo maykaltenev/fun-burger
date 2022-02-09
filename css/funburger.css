@@ -90,3 +90,22 @@ section {
 .hamburger2:hover > :nth-child(4) {
   display: block;
 }
+/* third flip to the top */
+.hamburger3 div {
+  transition: all 0.9s linear;
+}
+/* first line is sliding bottom right*/
+.hamburger3:hover > :nth-child(1) {
+  transform: skew(25deg) translate(0.4rem, 2rem);
+  /* transform: rotate(25deg) translate(0.4rem, 2rem); */
+}
+/* second line is sliding bottom right */
+.hamburger3:hover > :nth-child(2) {
+  transform: skew(25deg) translate(0.4rem, 2rem);
+  /* transform: rotate(90deg) translate(0.4rem, 2rem); */
+}
+/* third line is making a flip and goes on top*/
+.hamburger3:hover > :nth-child(3) {
+  /* transform: skew(25deg) translate(0.4rem, 2rem); */
+  transform: rotate(180deg) translate(-1.3rem, 2rem);
+}
